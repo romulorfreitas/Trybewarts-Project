@@ -10,18 +10,22 @@
   height: 60px;
   justify-content: space-between;
 }
+
 .trybewarts-login {
   display: flex;
   padding: 10px;
-}
-input {
-}
-.buttonEntrar {
-}
-.trybewarts-header-logo {
 }
 
 #trybewarts-header-title {
   display: flex;
   align-items: center;
+}
+
+main {
+  display: flex;
+}
+
+#evaluation-form {
+  display: flex;
+  width: 675px;
 }
