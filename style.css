@@ -42,3 +42,7 @@ main {
 .side2 {
   display: flex;
 }
+
+#avaliacao {
+  display: flex; 
+}
