@@ -53,3 +53,6 @@ textarea {
   resize: none;
 }
 
+.validar {
+  display: flex;
+}
