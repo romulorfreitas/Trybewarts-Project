@@ -12,4 +12,15 @@ function login() {
   }
 }
 
+
+document.getElementById('submit-btn').disabled = true;
+document.getElementById('agreement').addEventListener('click', function(event) {
+  let conteudo = document.getElementById("agreement").value;
+  if (conteudo !== null && conteudo !== '') {
+    document.getElementById("submit-btn").disabled = false;
+  } else { 
+    document.getElementById("submit-btn").disabled = true;
+  }
+});
+
 buttonLogin.addEventListener('click', login);
