@@ -1,27 +1,26 @@
-const email = document.getElementById("email");
+const email = document.getElementById('email');
 console.log(email);
-const password = document.getElementById("password");
+const password = document.getElementById('password');
 
-const buttonLogin = document.querySelector(".buttonEntrar");
+const buttonLogin = document.querySelector('.buttonEntrar');
 
 function login() {
-  if (email.value === "tryber@teste.com" && password.value === "123456") {
-    window.alert("Olá, Tryber!");
+  if (email.value === 'tryber@teste.com' && password.value === '123456') {
+    window.alert('Olá, Tryber!');
   } else {
-    window.alert("Email ou senha inválidos.");
+    window.alert('Email ou senha inválidos.');
   }
 }
+buttonLogin.addEventListener('click', login);
 
-document.getElementById("submit-btn").disabled = true;
-document
-  .getElementById("agreement")
-  .addEventListener("click", function (event) {
-    let conteudo = document.getElementById("agreement").value;
-    if (conteudo !== null && conteudo !== "") {
-      document.getElementById("submit-btn").disabled = false;
-    } else {
-      document.getElementById("submit-btn").disabled = true;
-    }
-  });
+const btnSubmit = document.getElementById('submit-btn');
+btnSubmit.disabled = true;
+const chec = document.getElementById('agreement').value;
+const agR = document.getElementById('agreement');
 
-buttonLogin.addEventListener("click", login);
+function apply() {
+  if (chec !== null && chec !== '') {
+    document.getElementById('submit-btn').disabled = false;
+  }
+}
+agR.addEventListener('click', apply);
